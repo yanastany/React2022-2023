@@ -1,0 +1,416 @@
+/* body{
+    background: #fdf6cb;
+}
+
+.tabel {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 4px;
+    font-family: "Varela Round", sans-serif;
+    border: 2px solid #694300; 
+}
+
+.tabel thead tr {
+    background-color: #694300;
+    text-align: left;
+    
+}
+
+.tabel th,
+.tabel td {
+    padding: 12px 15px;
+}
+
+.tabel tbody tr {
+    border-bottom: thin solid #e5cb7e;
+}
+
+.tabel tbody tr:nth-of-type(even) {
+    background-color: #e5cb7e;
+}
+
+.tabel tbody tr:nth-of-type(odd) {
+    background-color: #e6d6a7;
+}
+
+.tabel tbody tr:last-of-type {
+    border-bottom: thin solid #694300;
+}
+
+.tabel tbody tr.active-row {
+    font-weight: bold;
+    color: #694300;
+}
+
+button {
+  background-color: #694300;
+  border-radius: 100px;
+  box-shadow: #9a9894 0 4px 8px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+}
+
+button:hover {
+  box-shadow: #9a9894 0 -25px 18px -14px inset,#9a9894 0 1px 2px,#9a9894 0 2px 4px,#9a9894 0 4px 8px,#9a9894 0 8px 16px,#9a9894 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#butonAdd{
+    margin-left: 44%;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    font-size: 100%;
+    padding:1%;
+    box-shadow: #e6d6a7 0 10px 18px;
+    border-radius: 10px;
+    background-color: #694300;
+}
+
+.login, .reset, .logged, .form, .match{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1.1px;
+    margin-top: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 100em;
+    height: 15em;
+}
+
+.title > Weather {
+    flex: 0 1 auto;
+    width: 30em;
+    height: 15em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.title > div:first-of-type {
+    flex: 0 1 auto;
+    width: 60em;
+    height: 15em;
+    margin-left: auto;
+}
+
+.field > .raspuns {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1.1px;
+}
+
+.login > .field, .register > .field, .reset > .field, .logged > .text, .match > footer {
+    margin-bottom: 25px;
+}
+
+.login > .buton, .register > .buton, .reset > .buton, .logged * .buton {
+    background-color: #694300;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1.1px;
+}
+
+.reset, .logged {
+    margin-bottom: 50px;
+}
+
+.field > label{
+    color: #694300;
+    font-size: 1.5em;
+}
+
+.form > Button, .login > Button, .reset > Button{
+    margin: 25px;
+}
+
+ */
+
+
+ table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #F5EFE6;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  table * {
+    position: relative;
+  }
+  table td,
+  table th {
+    padding-left: 8px;
+  }
+  table thead tr {
+    height: 60px;
+    background: #7895B2;
+    font-size: 16px;
+  }
+  table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #F5EFE6;
+  }
+  table tbody tr:last-child {
+    border: 0;
+  }
+  table td,
+  table th {
+    text-align: left;
+  }
+  table td.l,
+  table th.l {
+    text-align: right;
+  }
+  table td.c,
+  table th.c {
+    text-align: center;
+  }
+  table td.r,
+  table th.r {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 35.5em) {
+    table {
+      display: block;
+    }
+    table > *,
+  table tr,
+  table td,
+  table th {
+      display: block;
+    }
+    table thead {
+      display: none;
+    }
+    table tbody tr {
+      height: auto;
+      padding: 8px 0;
+    }
+    table tbody tr td {
+      padding-left: 40%;
+      margin-bottom: 12px;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+    table tbody tr td:nth-child(1):before {
+      content: "Code";
+    }
+    table tbody tr td:nth-child(2):before {
+      content: "Stock";
+    }
+    table tbody tr td:nth-child(3):before {
+      content: "Cap";
+    }
+    table tbody tr td:nth-child(4):before {
+      content: "Inch";
+    }
+    table tbody tr td:nth-child(5):before {
+      content: "Box Type";
+    }
+  }
+  body {
+    background: #E8DFCA;
+    font: 400 14px "Calibri", "Arial";
+   
+  }
+  
+  blockquote {
+    color: white;
+    text-align: center;
+  }
+
+
+
+  
+
+ 
+
+
+
+
+  button {
+    background: #7895B2;
+    border-radius: 999px;
+    
+    box-sizing: border-box;
+    color: #F5EFE6;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    
+  }
+  button:hover  {
+    transition: all 0.45s;
+    color: #1c265c;
+  }
+  
+
+  
+  #butonAdd{
+      margin-left: 44%;
+      
+      margin-bottom: 1.5%;
+      font-size: 100%;
+      padding:1%;
+      background: #7895B2;
+      border-radius: 999px;
+      box-shadow: #F5EFE6 0 10px 20px -10px;
+      box-sizing: border-box;
+      color: #F5EFE6;
+      cursor: pointer;
+      font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+  }
+
+  #butonAdd:hover  {
+    transition: all 0.45s;
+    color: #1c265c;
+  }
+  
+  
+  .login, .reset, .logged, .form, .match{
+      display: block;
+      margin: auto;
+      width: fit-content;
+      text-align: center;
+      font-family: "Varela Round", sans-serif;
+      letter-spacing: 1.1px;
+      margin-top: 50px;
+  }
+  
+  .title{
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      width: 100em;
+      height: 15em;
+  }
+  
+  .title > Weather {
+      flex: 0 1 auto;
+      width: 30em;
+      height: 15em;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+    
+  .title > div:first-of-type {
+      flex: 0 1 auto;
+      width: 60em;
+      height: 15em;
+      margin-left: auto;
+  }
+  
+  .field > .raspuns {
+      display: block;
+      margin: auto;
+      width: fit-content;
+      text-align: center;
+      font-family: "Varela Round", sans-serif;
+      letter-spacing: 1.1px;
+  }
+  
+  .login > .field, .register > .field, .reset > .field, .logged > .text, .match > footer {
+      margin-bottom: 25px;
+  }
+  
+  .login > .buton, .register > .buton, .reset > .buton, .logged * .buton {
+      background-color: #7895B2;
+      font-family: "Varela Round", sans-serif;
+      letter-spacing: 1.1px;
+      text-decoration: none;
+  }
+  
+  .reset, .logged {
+      margin-bottom: 50px;
+  }
+  
+  .field > label{
+      color: #7895B2;
+      font-size: 1.5em;
+  }
+  
+  .form > Button, .login > Button, .reset > Button{
+      margin: 25px;
+  }
+  .spatiu{
+    padding: 30px;
+  }
+  h1 {
+    margin-left: -3%;
+      margin-top: 4%;
+      margin-bottom: 1.5%;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: #7895B2;
+    outline: none;
+    
+    cursor: pointer;
+  }
